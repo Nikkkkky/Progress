@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>
+        Расписание ТИУ - Телеграм Бот
+    </title>
+    <link rel="shortcut icon" href="icon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+
+<body class="body_hide">
+
+    <div style="background-color: white;">
+    <header class="font">
+        <nav>
+            <ul>
+                <li><button class="font" onclick="aShow();">На главную</button></li>
+                <li><button class="font" onclick="bShow();">Доступ к боту</button></li>
+                <li><button class="font" onclick="cShow();">О нас</button></li>
+            </ul>
+        </nav>
+    </header>
+    </div>
+    
+    <div id="a" class="font" class="main_div">
+        <p>Здравствуйте! Добро пожаловать на нашу страницу.</p>
+    </div>
+
+    <div id="b" class="font" class="main_div">
+        <p>Ссылка на бота: <a target="_blank" href="https://web.telegram.org/k/">здесь</a></p>
+    </div>
+
+    <div id="c" class="font" class="main_div">
+        <p>Мы учимся в ТИУ</p>
+    </div>
+
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
+    <div id="vk_community_messages"></div>
+    <script type="text/javascript">
+        VK.Widgets.CommunityMessages("vk_community_messages", 205158941, { expanded: "1", disableExpandChatSound: "1", disableNewMessagesSound: "1", tooltipButtonText: "Есть вопрос?" });
+    </script>
+</body>
